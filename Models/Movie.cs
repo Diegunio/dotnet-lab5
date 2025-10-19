@@ -8,6 +8,7 @@ public class Movie
     public string Title { get; set; } = "";
     [UIHint("LongText")]
     public string Description { get; set; } = "";
+    [UIHint("Stars")]
     public int Rating { get; set; }
     public string TrailerLink { get; set; } = "";
 }

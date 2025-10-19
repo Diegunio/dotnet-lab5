@@ -1,0 +1,10 @@
+@model int
+@{
+    var total = 5;
+    var filled = Math.Clamp(Model, 0, total);
+    var empty = total - filled;
+}
+<span title="@Model">
+@for (int i = 0; i < filled; i++) { @Html.Raw("&#x2605;") }
+@for (int i = 0; i < empty; i++) { @Html.Raw("&#x2606;") }
+</span>
